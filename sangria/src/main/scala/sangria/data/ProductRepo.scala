@@ -1,4 +1,4 @@
-package sangria
+package sangria.data
 
 class ProductRepo {
   private val Products = List(

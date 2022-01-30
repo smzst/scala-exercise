@@ -1,5 +1,6 @@
 package sangria
 
+import sangria.data.{Identifiable, Picture, ProductRepo}
 import sangria.macros.derive.*
 import sangria.schema.{fields, Argument, Field, InterfaceType, ListType, ObjectType, OptionType, Schema, StringType}
 
@@ -33,7 +34,7 @@ object SchemaDefinition {
     デフォルトでは、マクロは case class のフィールドのみを考慮する。以下はマクロに `picture()` を含めるように要求している
     また、デフォルトでは実現しないため実装されたインターフェイスを定義している
    */
-  val ProductType: ObjectType[Unit, Product] = deriveObjectType[Unit, Product](
+  val ProductType: ObjectType[Unit, data.Product] = deriveObjectType[Unit, data.Product](
     Interfaces(IdentifiableType),
     IncludeMethods("picture")
   )

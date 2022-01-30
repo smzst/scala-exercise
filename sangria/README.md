@@ -1,4 +1,13 @@
 # sangria-exercise
+* https://sangria-graphql.github.io/getting-started/
+* https://github.com/sangria-graphql/sangria-akka-http-example
+
+e.g.
+```bash
+curl -X POST http://127.0.0.1:8080/graphql \
+  -H "Content-Type:application/json" \
+  -d '{"query":"{products {name}}"}'
+```
 
 ## 疑問点
 

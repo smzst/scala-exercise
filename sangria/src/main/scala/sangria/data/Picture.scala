@@ -1,4 +1,4 @@
-package sangria
+package sangria.data
 
 /*
   GraphQL syntax:

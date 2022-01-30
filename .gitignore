@@ -1,5 +1,3 @@
 /.bsp/
 /.idea/
-/target/
-/project/target/
-/sangria/target/
+target/
